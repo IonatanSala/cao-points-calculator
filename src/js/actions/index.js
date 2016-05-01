@@ -18,11 +18,20 @@ export const addSubject = (subject) => {
   }
 }
 
+function _calculatePoints(grade) {
+
+}
+
 // filter between the subject that is on the screen
-export const filterSubject = (subject) => {
+export const filterSubject = ({subject, level, grade}) => {
   return {
     type: FILTER_SUBJECT,
-    subject,
+    subject: {
+      id: Time.now(),
+      subject,
+      level,
+      grade,
+    }
   }
 }
 
