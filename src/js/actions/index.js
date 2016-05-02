@@ -18,8 +18,8 @@ export const addSubject = (subject) => {
   }
 }
 
-function _calculatePoints(grade) {
-
+function _calculatePoints(level, grade) {
+  
 }
 
 // filter between the subject that is on the screen
